@@ -1,12 +1,7 @@
 package com.regrassion;
 
-import java.util.Iterator;
-import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByLinkText;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
@@ -17,13 +12,27 @@ import org.testng.Assert;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class HomePageTest {
-	WebDriver driver = new ChromeDriver();
+import Pages11.Base1;
+import Pages11.BrandStrore1; 
+
+public class HomePageTest{
+	
 	private static final Logger LOG = Logger.getLogger(HomePageTest.class);
 	
+	@Test
+	public void brandStore() throws InterruptedException {
+		LOG.info("start");
+		Base1.openUrl("https://droom.in/discovery");
+		Base1.driver.manage().window().maximize();
+		BrandStrore1 brandStrore1 = new BrandStrore1();
+		brandStrore1.productSearch();
+		//LOG.info("END");
+		BrandStrore1.verifyProduct();
+	}
 	
 	
 	@Ignore
+	
 	  public void searchBar() { 
 		
 	  driver.get("https://droom.in/discovery");
@@ -125,14 +134,12 @@ public class HomePageTest {
 	 //action.moveToElement(element, 113, 696).perform();
 	 
 	}
-	@Ignore
-	public void model() {
-		driver.get("https://droom.in/discovery");
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//div[@id=\"nav_category_button\"]")).click();
-		driver.findElement(By.xpath("//div[text()=\"Bike\"]")).click();
-		driver.findElement(By.xpath("//h2[text()=\"Make and Model\"]")).click();
-		driver.findElement(By.xpath("(//span[text()=\"Bajaj\"])[1]")).click();
+	/*public void model() {
+		Base.openUrl("https://droom.in/discovery");
+		Base.maximizeWindow();
+		BrandStore.searchForProduct("Bajaj");
+		
+		
 		int length=driver.findElements(By.xpath("//img[@class=\"card-img-top\"]")).size();
 		Actions action=new Actions(driver);		
 		int value[]=new int[length];
@@ -147,13 +154,7 @@ public class HomePageTest {
 		//Assert.assertEquals(driver.findElement(By.xpath("//img[@class=\"card-img-top\"["+(i+1)+"]")).getText().contains("Bajaj"));
 		}
 
-	}
-	@Test
-	public void brandStore() {
-		driver.get("https://droom.in/discovery");
-		driver.manage().window().maximize();
-		driver.findElement(By.cssSelector("div.services-links>a:nth-of-type(4)")).click();// Using CSS selector
-		LOG.info("Your in brandstore");
-	}
+	}*/
+	
 	
 }
