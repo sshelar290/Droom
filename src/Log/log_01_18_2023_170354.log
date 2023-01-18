@@ -1,0 +1,8 @@
+2023-Jan-18 00:15:02,554 [main] com.regrassion.HomePageTest 
+  INFO  start
+2023-Jan-18 00:15:14,044 [main] Pages11.Base1 
+  INFO  Url launched https://droom.in/discovery
+2023-Jan-18 00:15:22,097 [main] Pages11.BrandStrore1 
+  INFO  Title of Pagebrand store - honda cars
+2023-Jan-18 00:15:22,114 [main] Pages11.BrandStrore1 
+  INFO  Listed product is Honda
