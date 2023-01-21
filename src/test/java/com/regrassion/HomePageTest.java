@@ -13,6 +13,7 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import Pages11.Base1;
+import Pages11.BikeSale;
 import Pages11.BrandStrore1; 
 
 public class HomePageTest{
@@ -29,24 +30,28 @@ public class HomePageTest{
 		//LOG.info("END");
 		BrandStrore1.verifyProduct();
 	}
-	
-	
-	@Ignore
-	
-	  public void searchBar() { 
+
+	@Test
+	public void BikeSale() throws InterruptedException {
+		Base1.openUrl("https://droom.in/discovery");
+		Base1.driver.manage().window().maximize();
+		BikeSale bikesale = new BikeSale();
+		bikesale.assendingOrder();
+		Base1.driver.quit();
 		
-	  driver.get("https://droom.in/discovery");
+	}
+	/*
+	@Ignore
+	  public void searchBar() { 
+		  driver.get("https://droom.in/discovery");
 	  LOG.info("browser launching");
 	  driver.manage().window().maximize();
 	   WebElement m = driver.findElement(By.xpath("//input[@class=\"form-control d-font-size-12 d-text-gray gtmEvent\"]"));
 	   m.sendKeys("Thar"); m.sendKeys(Keys.ENTER);
 	  //Assert.assertEquals(driver.findElement(By.xpath("//h2[@class=\"MuiTypography-root jss194 MuiTypography-body1\"]//child::a[@href=\"https://droom.in/product/mahindra-thar-lx-4-str-convertible-diesel-mt-bs6-2021-63a148fc95c7720f3f8b457c\"]")).getText(), "Mahindra Thar CRDE 4X4 BS IV 2015");
 	  Assert.assertTrue(driver.findElement(By.xpath("//h2[@class=\"MuiTypography-root jss194 MuiTypography-body1\"]//child::a[@href=\"https://droom.in/product/mahindra-thar-lx-4-str-convertible-diesel-mt-bs6-2021-63a148fc95c7720f3f8b457c\"]")).getText().contains("Thar")); 
-	  //Assert.assertEquals(true, false); }
-	 	 
-
-}
-	@Ignore
+	  //Assert.assertEquals(true, false); } }
+@Ignore
 	public void location() throws InterruptedException {
 		driver.get("https://droom.in/discovery");
 		driver.findElement(By.xpath("//label[@class=\"d-text-transform-capitalize d-display-inline-block d-margin-0 d-line-height-1 d-font-size-14 d-font-weight-500 d-text-black d-valign-top d-margin-top-2 d-margin-right-10\"]")).click();
@@ -59,33 +64,9 @@ public class HomePageTest{
 		//driver.findElement(By.xpath("//label[@class=\"d-text-transform-capitalize d-display-inline-block d-margin-0 d-line-height-1 d-font-size-14 d-font-weight-500 d-text-black d-valign-top d-margin-top-2 d-margin-right-10\"]"));
 		System.out.println(driver.findElement(By.xpath("//div[@class=\"location-wrapper\"]//label")).getText());
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@class=\"location-wrapper\"]//label")).getText().contains("Pune"));
-	}
-	@Ignore
-	public void assendingOrder() throws InterruptedException {
-		driver.get("https://droom.in/discovery");
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//div[@id=\"nav_category_button\"]")).click();
-		driver.findElement(By.xpath("//div[text()=\"Bike\"]")).click();
-		driver.findElement(By.xpath("//div[@class=\"MuiInputBase-root MuiInput-root jss99 MuiInputBase-formControl MuiInput-formControl\"]")).click();
-		driver.findElement(By.xpath("//li[text()=\"Price (Low to High)\"]")).click();
-		Thread.sleep(2000);
-		int length=driver.findElements(By.xpath("//div/div[@class=\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4\"]/div[@class=\"grid\"]")).size();
-		
-		Actions action=new Actions(driver);		
-		int value[]=new int[length];
-		for(int i=0; i<length; i++)
-		{
-		action.moveToElement(driver.findElement(By.xpath("(//div/div[@class=\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4\"]/div[@class=\"grid\"]/div/div)["+(i+1)+"]")));	
-		System.out.println(driver.findElement(By.xpath("(//div/div[@class=\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4\"]/div[@class=\"grid\"]/div/div/div[2]/div/div/span)["+(i+1)+"]")).getText());
-		value[i]=Integer.parseInt(driver.findElement(By.xpath("(//div/div[@class=\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4\"]/div[@class=\"grid\"]/div/div/div[2]/div/div/span)["+(i+1)+"]")).getText().replaceAll("[^0-9.]", "").replaceAll(",", ""));
-		}
-		
-		for (int i = 0; i < value.length-1; i++) {
-			System.out.println(value[i]+"<"+value[i+1]);
-			Assert.assertTrue(value[i]<=value[i+1],"Price not in Ascending");
-			
-		}
-	}
+	}*/
+	
+	
 	@Ignore
 	public void cardCheack () throws InterruptedException {
 		driver.get("https://droom.in/discovery");
@@ -128,10 +109,7 @@ public class HomePageTest{
 	  
 	  action.moveToElement(element).clickAndHold().moveByOffset(113, 696).release().perform();
 	  
-	 // action.dragAndDropBy(driver.findElement(By.xpath("(//span[@id=\"range_text_price\"]//parent::div/div/div/div/div/div/div)[1]")),696,200).perform();
-	 
-	 //action.moveToElement(driver.findElement(By.xpath("(//span[@id=\"range_text_price\"]//parent::div/div/div/div/div/div/div)[1]")), 100, 729).click().build().perform();
-	 //action.moveToElement(element, 113, 696).perform();
+
 	 
 	}
 	/*public void model() {

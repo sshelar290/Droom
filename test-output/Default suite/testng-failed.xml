@@ -5,7 +5,7 @@
     <classes>
       <class name="com.regrassion.HomePageTest">
         <methods>
-          <include name="brandStore"/>
+          <include name="BikeSale"/>
         </methods>
       </class> <!-- com.regrassion.HomePageTest -->
     </classes>

@@ -1,8 +1,96 @@
-2023-Jan-18 00:15:02,554 [main] com.regrassion.HomePageTest 
-  INFO  start
-2023-Jan-18 00:15:14,044 [main] Pages11.Base1 
+2023-Jan-18 15:54:29,214 [main] Pages11.Base1 
   INFO  Url launched https://droom.in/discovery
-2023-Jan-18 00:15:22,097 [main] Pages11.BrandStrore1 
-  INFO  Title of Pagebrand store - honda cars
-2023-Jan-18 00:15:22,114 [main] Pages11.BrandStrore1 
-  INFO  Listed product is Honda
+2023-Jan-18 15:54:41,001 [main] Pages11.BikeSale 
+  INFO  3,900
+2023-Jan-18 15:54:41,110 [main] Pages11.BikeSale 
+  INFO  3,911
+2023-Jan-18 15:54:41,237 [main] Pages11.BikeSale 
+  INFO  4,400
+2023-Jan-18 15:54:41,349 [main] Pages11.BikeSale 
+  INFO  4,500
+2023-Jan-18 15:54:41,441 [main] Pages11.BikeSale 
+  INFO  4,501
+2023-Jan-18 15:54:41,532 [main] Pages11.BikeSale 
+  INFO  5,000
+2023-Jan-18 15:54:41,625 [main] Pages11.BikeSale 
+  INFO  5,850
+2023-Jan-18 15:54:41,771 [main] Pages11.BikeSale 
+  INFO  6,000
+2023-Jan-18 15:54:41,979 [main] Pages11.BikeSale 
+  INFO  6,400
+2023-Jan-18 15:54:42,066 [main] Pages11.BikeSale 
+  INFO  6,700
+2023-Jan-18 15:54:42,190 [main] Pages11.BikeSale 
+  INFO  6,890
+2023-Jan-18 15:54:42,283 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,372 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,475 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,561 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,648 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,740 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,830 [main] Pages11.BikeSale 
+  INFO  7,000
+2023-Jan-18 15:54:42,921 [main] Pages11.BikeSale 
+  INFO  7,500
+2023-Jan-18 15:54:43,010 [main] Pages11.BikeSale 
+  INFO  7,500
+2023-Jan-18 15:54:43,101 [main] Pages11.BikeSale 
+  INFO  7,999
+2023-Jan-18 15:54:43,200 [main] Pages11.BikeSale 
+  INFO  8,000
+2023-Jan-18 15:54:43,302 [main] Pages11.BikeSale 
+  INFO  8,000
+2023-Jan-18 15:54:43,393 [main] Pages11.BikeSale 
+  INFO  8,000
+2023-Jan-18 15:54:43,422 [main] Pages11.BikeSale 
+  INFO  3900<3911
+2023-Jan-18 15:54:43,425 [main] Pages11.BikeSale 
+  INFO  3911<4400
+2023-Jan-18 15:54:43,425 [main] Pages11.BikeSale 
+  INFO  4400<4500
+2023-Jan-18 15:54:43,425 [main] Pages11.BikeSale 
+  INFO  4500<4501
+2023-Jan-18 15:54:43,425 [main] Pages11.BikeSale 
+  INFO  4501<5000
+2023-Jan-18 15:54:43,425 [main] Pages11.BikeSale 
+  INFO  5000<5850
+2023-Jan-18 15:54:43,426 [main] Pages11.BikeSale 
+  INFO  5850<6000
+2023-Jan-18 15:54:43,426 [main] Pages11.BikeSale 
+  INFO  6000<6400
+2023-Jan-18 15:54:43,426 [main] Pages11.BikeSale 
+  INFO  6400<6700
+2023-Jan-18 15:54:43,426 [main] Pages11.BikeSale 
+  INFO  6700<6890
+2023-Jan-18 15:54:43,426 [main] Pages11.BikeSale 
+  INFO  6890<7000
+2023-Jan-18 15:54:43,426 [main] Pages11.BikeSale 
+  INFO  7000<7000
+2023-Jan-18 15:54:43,427 [main] Pages11.BikeSale 
+  INFO  7000<7000
+2023-Jan-18 15:54:43,427 [main] Pages11.BikeSale 
+  INFO  7000<7000
+2023-Jan-18 15:54:43,427 [main] Pages11.BikeSale 
+  INFO  7000<7000
+2023-Jan-18 15:54:43,427 [main] Pages11.BikeSale 
+  INFO  7000<7000
+2023-Jan-18 15:54:43,427 [main] Pages11.BikeSale 
+  INFO  7000<7000
+2023-Jan-18 15:54:43,427 [main] Pages11.BikeSale 
+  INFO  7000<7500
+2023-Jan-18 15:54:43,428 [main] Pages11.BikeSale 
+  INFO  7500<7500
+2023-Jan-18 15:54:43,428 [main] Pages11.BikeSale 
+  INFO  7500<7999
+2023-Jan-18 15:54:43,428 [main] Pages11.BikeSale 
+  INFO  7999<8000
+2023-Jan-18 15:54:43,428 [main] Pages11.BikeSale 
+  INFO  8000<8000
+2023-Jan-18 15:54:43,428 [main] Pages11.BikeSale 
+  INFO  8000<8000
