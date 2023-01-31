@@ -11,7 +11,13 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import Pages11.Base1;
+
+import Pages11.BikeSale;
+import Pages11.BrandStrore1;
+import Pages11.Scooters;
+import Pages11.BrandStrore1;
 import Pages11.BrandStrorePage;
+
 
 public class HomePageTest {
 
@@ -40,7 +46,18 @@ public class HomePageTest {
 	}
 
 	@Test
+	public void SetlocationAndSearchForScooterPage() throws InterruptedException {
+		Base1.driver.manage().window().maximize();
+		Base1.driver.get("https://droom.in/discovery");
+		Scooters scooter=new Scooters();
+		scooter.SearchPage();
+		Thread.sleep(1000);
+		scooter.setLocation();
+		scooter.vscooterUsingByBrand();
+	}
+	@Test
 	public void Vehicalinfo() {
+
 		LOG.info("Click on Vehicle tab");
 		Base1.openUrl("https://droom.in/discovery");
 		Base1.driver.manage().window().maximize();
