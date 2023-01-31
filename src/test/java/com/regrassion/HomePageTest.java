@@ -57,6 +57,8 @@ public class HomePageTest {
 		brandStrore1.cartCheack();
 		Base1.driver.close();
 	}
+	
+	
 	/*
 	 * @Ignore public void searchBar() {
 	 * Base1.driver.get("https://droom.in/discovery");
@@ -71,23 +73,6 @@ public class HomePageTest {
 	 * xpath("//h2[@class=\"MuiTypography-root jss194 MuiTypography-body1\"]//child::a[@href=\"https://droom.in/product/mahindra-thar-lx-4-str-convertible-diesel-mt-bs6-2021-63a148fc95c7720f3f8b457c\"]"
 	 * )).getText().contains("Thar")); //Assert.assertEquals(true, false); } }
 	 * 
-	 * 
-	 * public void searchBar() {
-	 * 
-	 * Base1.driver.get("https://droom.in/discovery");
-	 * LOG.info("browser launching"); Base1.driver.manage().window().maximize();
-	 * WebElement m = Base1.driver .findElement(By.
-	 * xpath("//input[@class=\"form-control d-font-size-12 d-text-gray gtmEvent\"]")
-	 * ); m.sendKeys("Thar"); m.sendKeys(Keys.ENTER); //
-	 * Assert.assertEquals(Base1.driver.findElement(By.xpath(
-	 * "//h2[@class=\"MuiTypography-root // jss194 // MuiTypography-body1\
-	 * "]//child::a[@href=\"https://droom.in/product/mahindra-thar-lx-4-str-convertible-diesel-mt-bs6-2021-63a148fc95c7720f3f8b457c\"]"
-	 * )).getText(), // "Mahindra Thar CRDE 4X4 BS IV 2015");
-	 * Assert.assertTrue(Base1.driver.findElement(By.xpath(
-	 * "//h2[@class=\"MuiTypography-root jss194 MuiTypography-body1\"]//child::a[@href=\"https://droom.in/product/mahindra-thar-lx-4-str-convertible-diesel-mt-bs6-2021-63a148fc95c7720f3f8b457c\"]"
-	 * )) .getText().contains("Thar")); // Assert.assertEquals(true, false); }
-	 * 
-	 * }
 	 * 
 	 * @Ignore >>>>>>> master public void location() throws InterruptedException {
 	 * Base1.driver.get("https://droom.in/discovery");
